@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Mukta', sans-serif;
+	user-select: none;
+
+}
+header{
+	background: linear-gradient(to right,#012895,#0E85B9);
+	width: 100%;
+	height: 400px;
+
+}
+nav{
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.h1{
+	padding: 0 100px;
+	font-weight: bold;
+	font-size: 35px;
+	color: #012895;
+	font-family: 'Mukta', sans-serif;
+	line-height: 80px;
+	cursor: pointer;
+}
+.h1 span{
+	font-size: 45px;
+	font-family: 'Otomanopee One', sans-serif;
+}
+ul{
+	display: flex;
+	padding: 0 100px;
+}
+
+ul li{
+	margin: 20px;
+}
+
+ul li a{
+	padding: 8px 18px;
+	/*background: red;*/
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid #0E85B9;
+	color: #012895;
+	line-height: 80px;
+}
+ul li a span i{
+	font-size: 25px;
+}
+
+.heading{
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.heading .span{
+	font-size: 45px;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+}
+.heading .spanS1{
+	margin-top: 20px;
+}
+.heading .spanS{
+	line-height: 23px;
+	color: #ddd;
+	font-size: 14px;
+
+}
+
+section{
+	width: 100%;
+}
+
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+.childCard{
+	width: 200px;
+	height: 190px;
+	margin: 10px 20px ;
+	background: linear-gradient(to left,#012895,#0E85B9);
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.childCard h1{
+	position: absolute;
+	top: -25%;
+	left: 60%;
+	font-size: 65px;
+	color: rgba(255,255,255,0.2);
+}
+.childCard h2{
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	font-size: 25px;
+	color: rgba(255,255,255,0.9);
+
+}
+.childCard p{
+	position: absolute;
+	top: 55%;
+	left: 0;
+	font-size: 16px;
+	color: rgba(255,255,255,0.9);
+	text-transform: capitalize;
+	margin: 5px;
+}
+
+
+.childCard:hover{
+	/*box-shadow: 0 0 30px #012895, #90adfc, #90adfc, #90fcaf, #fcf790, #fcb690, #90fcaf, #e890fc, #fc90a0 ;*/
+
+  box-shadow: 0 0 20px 0 rgb(252, 144, 160), 0 0 20px 0 rgb(205, 252, 144), 0 0 20px 0 rgb(144, 245, 252)
+  , 0 0 20px 0 rgb(144, 173, 252), 0 0 20px 0 rgb(202, 144, 252), 0 0 20px 0 rgb(252, 144, 236);
+  transition: 0.3s;
+}
+
+.section2{
+	width: 100%;
+	background: #eee;
+}
+
+.cardbox{
+	max-width: 1250px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+.card2{
+	width: 300px;
+	/*background: #eee;*/
+	height: 300px;
+	margin: 0 15px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	cursor: pointer;
+	/*background: linear-gradient(to left,rgba(1, 40, 149,0.8),rgba(14, 133, 185,0.8));*/
+
+}
+.card2 h3{
+	padding: 20px 30px;
+	font-size: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card2 p{
+	padding: 10px 30px;
+}
+.card2 .p{
+	padding: 10px 30px;
+	margin-bottom: 20px;
+	height: 80px;
+	overflow: hidden;
+}
+.card2 a{
+	padding: 8px 20px;
+	margin: 15px 20px;
+	background: linear-gradient(to left,#012895,#0E85B9);
+	color: #fff;
+	border-radius: 20px;
+}
+.card2 a:hover{
+	color: #ccc;
+}
+.like i{
+	padding: 10px 5px;
+	padding-left: 30px;
+}
+
+footer{
+	width: 100%;
+	background: linear-gradient(to right,#012895,#0E85B9);	height: 30px;
+	padding: 10px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer i{
+	padding: 8px 30px;
+	margin: 0 10px;
+	border: 1px solid #ddd;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width: 1015px){
+	.card2{
+	margin: 15px 15px;
+	}
+	.h1{
+		padding: 0 20px 0 50px ;
+	}
+	ul{
+	padding: 0 20px;
+	}
+	ul li{
+	margin: 5px;
+	}
+	ul li a{
+	font-size: 15px;
+	}
+	ul li a span i{
+	font-size: 20px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+/*.img{
+	width: 100%;
+	height: 100%;
+}
+.img img{
+	width: 100%;
+	height: 100%;
+
+}*/
